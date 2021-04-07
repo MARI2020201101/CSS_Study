@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_Internal CSS</title>
+<style>
+    p{
+       
+        border-left: 10px  solid royalblue;
+        background-color: burlywood;
+        margin: 10px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    h1{
+        background-color: rgb(66, 109, 226);
+        border-bottom: 10px solid rgb(255, 78, 78);
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        
+    }
+
+    div{
+        background-color: violet;
+        padding: 100px 50px 100px;
+        border: 2px solid black;
+    }
+
+    #marginDiv{
+        margin: 100px 20px 100px;
+        padding: 50px 10px 50px;
+        text-align: justify;
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+    .intro{
+        text-decoration: underline;
+        color:gray;
+        
+        background-color: thistle;
+        margin: 10px ;
+        text-indent: 5px;
+        font-family: monospace;
+        word-spacing: 2px;
+        border:#fff solid;
+        border-left : 5px solid green;
+    }
+</style>
+</head>
+<body>
+    2) Internal CSS
+    <!--
+        <style> </style>태그로 선언하기 : 보통 head안쪽에!!
+        하나의 문서에 여러번 올 수 있다. 
+    -->
+    <h1>CSS STUDY</h1>
+    <p>Like you saw in the previous page, there are many properties to consider when dealing with borders.
+
+    To shorten the code, it is also possible to specify all the individual border properties in one property.
+
+    The border property is a shorthand property for the following individual border properties:
+
+    border-width
+    border-style (required)
+    border-color</p>
+
+    <!--
+        [선택자 Selector]
+        선택자{속성: 값1; 속성: 값2;...}
+        
+        [선택자의 유형]
+        -tag : div. p. h1. input. body 등등
+        - . 선택자이름 : class로 가져오기 class=""
+                            중복 ok
+        - # 선택자 이름 : id로 가져오기 . 식별자(변수명)
+                            숫자시작 x , 영어로 줄 것
+                            id=""
+                            id는 중복 가능, but 그럴 때는 배열로 접근해야 함.
+                            중복해서 쓰는 것은 추천 x
+                            문법적 오류는 아님
+                        -->
+
+     <div>  To shorten the code, it is possible to specify all the padding properties in one property.
+
+        The padding property is a shorthand property for the following individual padding properties:
+        
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+        So, here is how it works:
+        
+        If the padding property has four values:
+        
+        padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px</div> 
+        
+    <div id="marginDiv">
+        The padding property is a shorthand property for the following individual padding properties:
+        
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+        So, here is how it works:
+        
+        If the padding property has four values:
+        
+        padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px
+    </div>
+    <div class="intro">
+        The letter-spacing property is used to specify the space between the characters in a text.
+
+        The following example demonstrates how to increase or decrease the space between characters:
+    </div>
+</body>
+</html>

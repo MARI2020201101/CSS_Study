@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   [CSS(Cascading Style Sheets)]
+   - 웹 문서(HTML)의 표현, 서식, 일관성 유지 
+    ex) 폰트 사이즈, 서식 등.. 하나로 통일하기
+    - 대소문자 반드시 구분한다( html은 안함)
+    - 종결문자는 ;
+    - 여러줄 주석 /**/
+    - 1개 주석 -- ( DB랑 동일 )
+     
+    [CSS 적용하는 방식]
+    1) Inline CSS   : Style 속성 적용. style =""
+                    임시적. 
+                    많이쓰면 문서가 지저분해져서 추천x
+    2) Internal CSS : <style></style> 태그 사용
+    3) External CSS : .css를 링크로 삽입. rel="stylesheet" 어쩌구
+
+    .css => 스타일만 모아놓은 문서라고 할 수 있다
+    .java .jar -> 자바만 모아놓은 문서! 
+    .dbf ->db파일
+
+    CSS적용방식 - 하나의 문서에 여러개 올 수 있다. (우선순위O)
+    중복되면 작은 것이 우선함
+
+    html는 태그로 구현
+    css 는?? => 선택자 (CSS selector)
+
+    [CSS Selector]
+    ;을 기준으로 속성을 추가해 나간다. 
+    속성 한개- 세미콜론으로 종결
+    내가 주고 싶은 속성들을 블라켓안에 넣는다
+        ex) p{color: red; text-align: center;}
+            ↑이게 바로 selector이다!
+    선택자 { 속성이름1: 값1 ; 속성이름2 : 값2;...}
+
+    [CSS 용어]
+    요소 element 
+    속성 property, attribute, key, name
+    값 value
+        
+</body>
+</html>

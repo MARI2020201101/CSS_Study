@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        포지셔닝: 브라우저 화면안에 박스 형태의
+        각 콘텐츠를 원하는 위치에 배치하는 것. 
+        팝업창에 이용할 수 있다!
+            종류: static, absolute, relative, fixed, sticky
+            가 있다 - 기본값은 static
+            sticky 는 익스플로러에서 적용안됨( 모바일용으로 생겨남)
+    -->
+    <div style="position:static;">
+        Position: static 입니다.
+        <p>수직으로만 배치</p>
+        <p>아무런 반응이 없다. 걍 박스</p>
+        <p>static 안줘도 됨..순차적으로 내용이 쌓인다.</p>
+    </div>
+    <!--
+        포지셔닝을 이용해서 내가 원하는 위치에 창을 배치한다!
+        수평을 기준으로? 수직을 기준으로? 
+        그리드 (grid)- 바둑판식을 기준으로 배치가능
+         = 포지셔닝 기법
+    -->
+    <!--
+        [화면 레이아웃 기법]
+        float 속성: 왼쪽 또는 오른쪽 위치 지정. 수평 정렬하기
+                    요소가 부모요소 기준으로 왼쪽 또는 오른쪽에 
+                    배치할지를 지정한다
+        clear 속성: float속성을 해제한다
+        position 속성 : 배치 방법을 지정
+        z- index: 레이아웃을 잡는다. 
+                  여기는 헤더! 여기는 대분류! 여기는 콘텐츠! 
+                  콘텐츠 안의 섹션나누기 등등.. 
+        - 레이아웃을 잡고 ( 뼈대를 세우고 ) - 안에 내용물넣기를 한다
+    -->
+</body>
+</html>
