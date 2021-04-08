@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        #s1 li:nth-child(1){
+        background-color: rgb(255, 100, 195);
+        position:fixed;
+        right:20px;
+        top:50px;
+        padding: 20px;
+    }
+    #s1 li:nth-child(2){
+        background-color:rgb(255, 159, 172);
+        position:absolute;
+        left:100px;
+        top:300px;
+        padding: 20px;
+    }
+    #s1 li:nth-child(3){
+        background-color:whitesmoke;
+        
+    }
+    #s1 ul{
+        background-color: rgb(122, 122, 122);
+        height: 600px;
+        position: relative;
+        left:600px;
+        top:600px;
+    }
+    </style>
+</head>
+<body>
+    <h1>position: fixed</h1>
+    <hr>
+    <section id="s2">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+    <!--
+        absolute와 sticky의 차이??
+        스크롤이 있을 때와 없을때!!
+    -->
+</body>
+</html>

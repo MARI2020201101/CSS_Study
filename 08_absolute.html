@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* #s1 li:nth-child(1){
+            background-color: yellow;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+            padding: 200px;
+        }
+        #s1 li:nth-child(2){
+            background-color:yellowgreen;
+            position: absolute;
+            left:100px;
+            top:10px;
+            padding: 100px;
+        }
+        #s1 li:nth-child(3){
+            background-color:whitesmoke;
+            position:relative;
+        }
+        #s1 ul{
+            background-color: wheat;
+            height: 300px; 
+        }*/
+        #s1 li:nth-child(1){
+            background-color: yellow;
+            position:absolute;
+            right:0px;
+            bottom:0px;
+            padding: 20px;
+        }
+        #s1 li:nth-child(2){
+            background-color:yellowgreen;
+            position:absolute;
+            left:100px;
+            top:300px;
+            padding: 20px;
+        }
+        #s1 li:nth-child(3){
+            background-color:whitesmoke;
+            
+        }
+        #s1 ul{
+            background-color: wheat;
+            height: 300px;
+           
+        }
+        /*
+        부모를 relative, 자식을 absolute로 주면- 
+        부모 안에서만 움직인다. 기준이 parent가 된다
+        
+        */
+
+        #s2 pre{
+            background-color: chartreuse;
+            width:400px;
+            height: 200px;
+            position: relative;
+            left:600px;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>position: absolute</h1>
+    <section id="s2">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s3">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+   <section id="s4">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s5">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+    
+    <!--absolute : 원래값은 사라진다
+        position의 기본은 static
+        position을 잡을때는 (일반적으로)top과 left를 조절한다
+        다음 element가 그 자리를 계속 채운다
+        좌.우.상.하 여백위치를 조절하면서 위치조절
+        팝업창도 이런 원리인듯함.
+        기준좌표 - body 영역(기본)
+        parent element를 기준으로 영역좌표 잡을 수도 있다
+    -->
+</body>
+</html>

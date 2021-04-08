@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_display</title>
+    <link rel="stylesheet" href="reset.css">
+<style>
+    #mydiv{
+        background-color: tomato;
+        position:absolute;
+        left:30px;
+        top:30px;
+        width:300px;
+        height:350px;
+        overflow:scroll;
+        /*display:block;*/
+        visibility: visible;
+    }
+#mydiv img{
+    width:100%;
+}
+div.test1{
+    background-color: tomato;
+    
+}
+div.test2{
+    background-color: rgb(255, 128, 106);
+}div.test3{
+    background-color: rgb(255, 194, 183);
+}div.test4{
+    background-color: rgb(255, 238, 235);
+}
+span#test1{
+    background-color: tomato;
+}
+span#test2{
+    background-color: rgb(255, 128, 106);
+}
+ul{
+    display:inline;
+}
+</style>
+</head>
+<body>
+    <!--
+        클릭하면 닫기되는 팝업창 : display를 이용한다
+    -->
+    <div id="mydiv">
+        <p>The overflow:The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:</p>
+        <br>
+        <br>
+        <img src="../../../mari-world/bear1.jpg">
+    </div>
+    <div>
+        <img src="../../../mari-world/free-icon-sun-4015212.png">
+    </div>
+    <br>
+    <textarea rows="3" cols="20">텍스트에어리아</textarea>
+    <br>
+    <hr>
+    <br>
+    <div class="test1">오필승</div>
+    <div class="test2">오필승</div>
+    <div class="test3">오필승</div>
+    <div class="test4">오필승</div>
+    <br>
+    <span id="test1">개나리</span>
+    <span id="test2">개나리</span>
+<br>
+<hr>
+<br>
+    <ul>
+        <li>가나다</li>
+        <li>마바사</li>
+        <li>아자차</li>
+    </ul>
+    <!--
+        display: inline; 줄바꿈없음
+        display: inline-block; 인라인과 블록의 중간정도.. 
+                                그 위치 유지하면서 - 줄바꿈
+        display: block; 줄바꿈 있음
+    -->
+</body>
+</html>

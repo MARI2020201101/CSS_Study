@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            position: relative;
+            width:200px;
+            height:240px;
+            background-color: #cccccc;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+
+        }
+        #menu:hover{
+            background-color: #e9ba1e;
+            transition: 300ms;
+            
+        }
+        #menu:hover>.gear{
+            background-image: url("../imgs/gear.png");
+            transition: ease 4s;
+            
+        }
+        #menu:hover>.gear:nth-child(1){
+            transform: rotate(-180deg);
+        }
+        #menu:hover>.gear:nth-child(2){
+            transform: rotate(210deg);
+        }
+        #menu strong{
+            position:absolute;
+            left:50px;
+            bottom:15px;
+            font-size: 20px;
+        }
+        #menu>.gear{
+            position:absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url(../imgs/gear-gray.png);
+            background-size: 80px;
+            transition: linear .2s;
+            
+        }
+        #menu>.gear:nth-child(1){
+            top:40px;
+            left:40px;
+        }
+
+        #menu>.gear:nth-child(2){
+            top:91px;
+            left:91px;
+            transform: rotate(60deg);
+        }
+
+        .test>div{     
+            width:20px;
+            height: 20px;
+            background-color: teal;
+            margin: 10px;    
+        }
+        #mydiv1:hover{
+            width:100px;
+            background-color: rgb(184, 255, 255);
+            transition: 2s;
+        }
+        #mydiv2:hover{
+            transform: rotate(360deg);
+            transition: 3s;
+        }
+        #mydiv3:hover{     
+           transform: rotate(360deg);
+           transition: 10s;
+           background-color: slateblue;
+           width: 300px;
+           height: 300px;
+           
+       }
+       #mydiv4:hover{
+            position: absolute;
+            
+            width:200px;
+            height:200px;
+            
+            transition: 2s;
+            transition-delay: 2s;
+            
+            background-color: rgb(1, 15, 19);
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="gear">
+            
+        </div>
+        <div class="gear">
+            
+        </div>
+        <strong>SETTINGS</strong>
+    </div>
+    <div class="test">
+        <div id="mydiv1"></div>
+        <div id="mydiv2"></div>
+        <div id="mydiv3"></div>
+        <div id="mydiv4"></div>
+        <div id="mydiv5"></div>
+    </div>
+</body>
+</html>

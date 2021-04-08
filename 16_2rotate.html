@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            position: relative;
+            width:400px;
+            height:400px;
+            background-color: #FCE4EC;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+
+        }
+        #menu:hover{
+            background-color: #E91E63;
+        }
+        #menu strong{
+            position:absolute;
+            left:50px;
+            bottom:15px;
+            font-size: 30px;
+        }
+        #menu>.gear{
+            position:absolute;
+        
+        }
+        #gear1:hover{
+            transform: rotateX(30);
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="gear" id="gear1">
+            <img src="../imgs/gear.png"> 
+         </div>
+         <div class="gear" id="gear2">
+            <img src="../imgs/gear.png"> 
+         </div>
+       
+        <strong>SETTINGS</strong>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        #s1 li:nth-child(1){
+        background-color: rgb(255, 100, 195);
+        position:fixed;
+        right:20px;
+        top:50px;
+        padding: 20px;
+    }
+    #s1 li:nth-child(2){
+        background-color:rgb(255, 159, 172);
+        position:absolute;
+        left:100px;
+        top:300px;
+        padding: 20px;
+    }
+    #s1 li:nth-child(3){
+        background-color:whitesmoke;
+        
+    }
+    #s1 ul{
+        background-color: rgb(122, 122, 122);
+        height: 600px;
+        position: relative;
+        left:600px;
+        top:600px;
+    }
+    #header{
+        position:sticky;
+        padding:20px;
+        background-color: skyblue;
+        top:0px;
+    }
+    #top{
+        padding:20px;
+        background-color: teal;
+        position: fixed;
+        bottom:0px;
+        right:0px;
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>position: sticky</h1>
+    </header>
+    <!--
+        sticky는 후발주자. 주로 모바일 용.
+        스크롤을 내려도 계속 있다
+        fixed와 달리 relative속성이 가미됨
+        문서에서 자기가 있어야할 원래 위치를 유지하면서 - 고정된다
+        fixed는 뒤 요소를 덮어버린다
+        sticky를 준 후 - top을 0 픽셀로 주어야 위에 고정이 가능
+    -->
+    <hr>
+    <section id="s2">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s3">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+   <section id="s4">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s5">
+        <pre>
+            An element with position: 
+            absolute; is positioned relative to 
+            the nearest positioned ancestor 
+            (instead of positioned relative to the viewport,
+             like fixed).
+            However; if an absolute positioned element 
+            has no positioned ancestors, 
+            it uses the document body, 
+            and moves along with page scrolling.
+        </pre>
+    </section>
+    <section id="s1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+    <div id="top">
+        <span>Top</span>
+    </div>
+</body>
+</html>
