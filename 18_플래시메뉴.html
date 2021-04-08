@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .hide{
+        display: none;
+    }
+    #nav{
+        width:200px;
+        margin:auto;
+        background-color: thistle;
+
+    }
+    #nav>ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }
+    #nav>ul>li:nth-child(1)>a:hover{
+        background-color: coral;
+    }
+    #nav>ul>li:nth-child(2)>a:hover{
+        background-color: rgb(80, 255, 124);
+    }
+    #nav>ul>li:nth-child(3)>a:hover{
+        background-color: rgb(255, 130, 217);
+    }
+    #nav>ul>li:nth-child(4)>a:hover{
+        background-color: rgb(118, 80, 255);
+    }
+    #nav>ul>li>a{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        width:200px;
+        height:64px;
+        text-indent: 30px;
+        display:block;
+
+        background-image: url(../imgs/icons.png);
+        background-repeat: no-repeat;
+        background-position: right 0;
+    }
+    /*각각 다른 이미지를 보여주기 위해
+    각 이미지 위쪽 여백을 조절*/
+    #nav>ul>li:nth-child(2)>a{
+        background-position: right -66px;
+    }
+    #nav>ul>li:nth-child(3)>a{
+        background-position: right -135px;
+    }
+    #nav>ul>li:nth-child(4)>a{
+        background-position: right -200px;
+    }
+    #nav>ul>li>a:hover{
+        color:aliceblue;
+        font-size: 16px;
+        text-shadow: 2px 2px 2px black;
+        width:240px;
+        border-radius: 0 32px 32px 0;
+        transition: ease 0.5s width;
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+    <h1 class="hide">플래시 메뉴</h1>
+    <div id="nav">
+        <h2 class="hide">주요메뉴</h2>
+        <ul>
+            <li><a href ="#">flickr</a></li>
+            <li><a href ="#">twitter</a></li>
+            <li><a href ="#">newsvine</a></li>
+            <li><a href ="#">last.fm</a></li>
+        </ul>
+    </div>
+</body>
+</html>

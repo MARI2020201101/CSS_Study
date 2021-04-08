@@ -5,7 +5,7 @@ style 태그없이 그냥 쓴다
 다양한 셀렉터가 있다
     *{} 모든 엘리먼트. 예를 들면 폰트 통일할때
 */
-
+@charset "UTF-8";
 *{font-family: 굴림;font-size: 15px;}
 
 *{font-family: 궁서체;background-color: grey;color: brown;
